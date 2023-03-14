@@ -1,0 +1,178 @@
+/*starts genereal design*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --main-color:#EEEEEE;
+    --black:#000000;
+    --light-black:#7D7D7D;
+    --light-white:#f5f5f5;
+    --yellow:#EAD944;
+}
+
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: red;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+section{
+    padding: 0rem 10%;
+}
+
+body{
+    margin: 0;
+    font-family: poppins;
+}
+
+.image-bg{
+    justify-content: right;
+    display: flex;
+     
+}
+
+.img-bg1 img{
+    display: none;
+}
+
+.image-bg img{
+    height: 100%;
+    width: 100rem;
+    max-width: 62%;
+    z-index: -1;
+    position: absolute;
+}
+
+.sign-in{
+    align-items: center;
+    text-align: center;
+    justify-content: left;
+    display: flex;
+}
+
+.logo{
+    padding: 5rem 10%;
+    text-align: center;
+}
+
+.content .input .container .box input{
+    width: 150%;
+    height: 3rem;
+    margin-left: -5rem;
+    border-radius: 10px;
+    border-width: 1px;
+    padding-left: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.content .input .container .box1{
+    margin-bottom: 1rem;
+}
+
+.content .input .fp a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.content .input .fp a:hover{
+    text-decoration: underline;
+}
+
+.content .input .fp{
+    margin-top: 1rem;
+    width: 185%;
+}
+
+.btn{
+    background-color: var(--yellow);
+    padding: .5rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.box-shadow{
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.5);
+    margin-left: -5rem;
+    width: 150%;
+  }
+
+.btn a{
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.discription{
+    margin-top: 2rem;
+}
+
+.discription span{
+    font-weight: 900;
+}
+
+.discription span a{
+    color: black;
+    text-decoration: none;
+}
+
+.discription span a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 80%;
+        overflow-x: hidden;
+    } 
+    body{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:800px){
+    body{
+        margin-bottom: -100rem;
+    }
+    .image-bg img{
+        display: none;
+    }
+
+    .img-bg1 img{
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+    .sign-in{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .logo .image img{
+        height: 100px;
+    }
+    .logo .image{
+        margin-top: -5rem;
+    }
+}
+
+@media screen and (max-width:400px){
+    html{
+        font-size: 60%;
+        overflow-x: hidden;
+    } 
+}
